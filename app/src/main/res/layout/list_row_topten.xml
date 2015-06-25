@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_rowtopTen"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/row_height"
+    android:background="@color/cellColor">
+
+    <ImageView
+        android:id="@+id/img_artisttopTen"
+        android:layout_width="@dimen/row_image"
+        android:layout_height="@dimen/row_image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_artisttopTen"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_artistNametopTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/artist_margin_left"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txt_albumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/artist_margin_left"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/editText_margin"
+        android:layout_marginRight="@dimen/editText_margin"
+        android:background="@color/lineColor" />
+</RelativeLayout>
